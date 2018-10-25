@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Genel ayarlar -->
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="tr">
+    <base href="{global.baseUrl}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site içeriği hakkında bilgi (meta tag) -->
+    <title> {head.title} | {global.appName} </title>
+    <meta name="description" content="{body.description}">
+
+    <!-- Statik kaynaklar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <script type="application/javascript" src="app.js"></script>
+
+    <style>
+        html {
+            background: url(images/bg-not-found.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .container {
+            width: 70%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="columns is-mobile is-centered has-text-centered">
+            <div class="column is-half">
+                <div class="notification" style="padding-bottom: 1.5rem;">
+                    <img src="images/ico-funny-404.png" alt="404" style="width: 50%;">
+                    <div class="title"> Yanlış Yerlerde Geziyorsun </div>
+                    Kayıp oldun ya da gizli işler peşindesin :D <br>
+                    Uslu biri olup, <a href="/">buraya</a> tıklayarak <strong> ana menüye </strong> dönmeni istemekteyiz. <br>
+                    Sitemizde iyi eğlenmeler :) <br>
+                    <a class="button is-warning" style="margin-top: 1rem;" href="/"> Ana Menü </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

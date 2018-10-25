@@ -1,0 +1,64 @@
+/* Genel */
+
+.navbar {
+    opacity: 0.9;
+}
+
+.bg-universe {
+    background: url(images/bg-universe.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.section-form {
+    /*
+    background: url(images/bg-form.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    background-image: radial-gradient(rgb(174, 174, 190) 30%, #02010C 65%, #ffffff 100%);
+    */
+    box-shadow: 3px 3px 45px grey;
+    border: 1px solid #b0b0b0;
+    text-align: center;
+    padding: 10% 15%;
+    margin: 7% auto;
+    max-width: 850px;
+}
+
+/* Tablet */
+@media screen and (min-width: 752px) {}
+
+/* Telefon */
+@media screen and (min-width: 768px) {}
+
+
+@media screen and (min-width: 1088px) {
+    .container {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
+
+/* Full HD */
+@media screen and (min-width: 1472px) {
+    .container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

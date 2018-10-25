@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Genel ayarlar -->
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="tr">
+    <base href="{global.baseUrl}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site içeriği hakkında bilgi (meta tag) -->
+    <title> {head.title} | {global.appName} </title>
+    <meta name="description" content="{body.description}">
+
+    <!-- Statik kaynaklar -->
+    <script type="application/javascript" src="app.js"></script>
+    <script type="application/javascript" src="{head.script}.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="app.css">
+    <!-- <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css"> -->
+
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
+            <section class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+                        <img src="images/yemre.png" width="112">
+                    </a>
+
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="/documentation">
+                            <span class="icon has-text-justified">
+                                <i class="fas fa-users"></i>
+                            </span>
+                            <span class="is-hidden-desktop-only" style="padding-left: 0.4rem">
+                                Biz Kimiz
+                            </span>
+                        </a>
+
+                        <a class="navbar-item">
+                            Documentation
+                        </a>
+
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                More
+                            </a>
+
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">
+                                    About
+                                </a>
+                                <a class="navbar-item">
+                                    Jobs
+                                </a>
+                                <a class="navbar-item">
+                                    Contact
+                                </a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item">
+                                    Report an issue
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item w-9 is-login is-hidden">
+                            <div class="field">
+                                <div class="control has-icons-left has-icons-right is-loading">
+                                    <input class="input is-spaced" type="text" value="5000" readonly>
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-lira-sign"></i>
+                                    </span>
+                                    <span class="icon is-small is-right is-hidden">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="navbar-item is-logout is-hidden">
+                            <div class="buttons">
+                                <a class="button is-primary" href="account/create">
+                                    <strong>Kayıt Ol</strong>
+                                </a>
+                                <a class="button is-light" href="session/create">
+                                    Giriş Yap
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="navbar-item is-login is-hidden">
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                Yunus Emre
+                            </a>
+
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">
+                                    Profilim
+                                </a>
+                                <a class="navbar-item" href="account/edit">
+                                    Hesap Ayarlarım
+                                </a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item">
+                                    Ayarlar
+                                </a>
+                                <a class="navbar-item">
+                                    Yardım
+                                </a>
+                                <a id="logoutButton" class="navbar-item">
+                                    Çıkış yap
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </nav>
+        <!-- End of Nav Bar -->
+    </header>
+
+    <section class="container">

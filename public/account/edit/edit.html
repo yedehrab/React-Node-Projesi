@@ -1,0 +1,100 @@
+Hesap bilgileri düzenleme
+
+<section class="section-form">
+    <form id="accountEdit1" action="/api/users" method="put">
+        <div class="formError"></div>
+        <div class="formSuccess">Your Changes Have Been Saved</div>
+        <!-- HTML'de aktarılabilen metotlar ["get", "post"] idir. Bu yüzden input olarak gönderiyoruz -->
+        <input type="hidden" name="_method" value="put" />
+        <input class="hiddenUsernameInput" type="hidden" name="username" />
+        <div>
+            <div>Kullanıcı Adı</div>
+            <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input displayUsernameInput" name="displayUsername" type="text" placeholder="gamer17" disabled>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div>Tam ad</div>
+            <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input fullNameInput" name="fullName" type="text" placeholder="Yunus Emre">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div>
+            <div>Email</div>
+            <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input emailInput" name="email" type="email" placeholder="emailim@gmail.com">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div>
+            <button class="button is-dark is-outlined" type="submit">Değişiklikleri Kaydet</button>
+        </div>
+    </form>
+</section>
+
+<section class="section-form">
+    <form id="accountEdit2" action="/api/users" method="put">
+        <div>
+            <div class="formError"></div>
+            <div class="formSuccess">Your Changes Have Been Saved</div>
+
+            <!-- HTML'de aktarılabilen metotlar ["get", "post"] idir. Bu yüzden input olarak gönderiyoruz -->
+            <input type="hidden" name="_method" value="put" />
+            <input class="hiddenUsernameInput" type="hidden" name="username" />
+
+            <div>Telefon No</div>
+            <input class="phoneInput" type="tel" name="phone" placeholder="1234567890" />
+        </div>
+        <div>
+            <div>Şifre</div>
+            <input class="passwordInput" type="password" name="password" placeholder="123" />
+        </div>
+        <div>
+            <button type="submit">Değişiklikleri Kaydet</button>
+        </div>
+    </form>
+</section>
+
+<section class="section-form">
+    <form id="accountEdit3" action="/api/users" method="delete">
+        <div>
+            <div class="formError"></div>
+            <div class="formSuccess">Your Changes Have Been Saved</div>
+
+            <!-- HTML'de aktarılabilen metotlar ["get", "post"] idir. Bu yüzden input olarak gönderiyoruz -->
+            <input type="hidden" name="_method" value="delete" />
+            <input class="hiddenUsernameInput" type="hidden" name="username" />
+
+            <div>Şifre</div>
+            <input class="passwordInput" type="password" name="password" placeholder="123" />
+
+            <div>
+                <button type="submit">Hesabı Sil</button>
+            </div>
+        </div>
+    </form>
+</section>

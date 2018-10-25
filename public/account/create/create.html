@@ -1,0 +1,52 @@
+<section class="section-form">
+    <form id="createAccount" action="/api/users" method="POST">
+        <div class="formError"></div>
+        <div class="field">
+            <p class="control has-icons-left has-icons-right">
+                <input class="input is-primary" type="text" name="username" placeholder="gamer17">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                </span>
+                <!-- 
+                <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                </span>
+            -->
+            </p>
+        </div>
+        <div class="field">
+            <p class="control has-icons-left has-icons-right">
+                <input class="input is-primary" type="email" name="email" placeholder="emailim@gmail.com">
+                <span class="icon is-small is-left">
+                    <i class="far fa-envelope"></i>
+                </span>
+                <!-- 
+                        <span class="icon is-small is-right">
+                            <i class="fas fa-check"></i>
+                        </span>
+                    -->
+            </p>
+        </div>
+        <div class="field">
+            <p class="control has-icons-left has-icons-right">
+                <input class="input is-primary" type="password" name="password" placeholder="***********">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                </span>
+                <!-- 
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                    </span>
+                -->
+            </p>
+        </div>
+        <div>
+            <div>Koşullarımızı kabul ediyor musun?</div>
+            <input type="checkbox" name="tosAgreement" value="agree">
+        </div>
+        <div>
+            <button class="button is-primary is-outlined" type="submit">Haydi Başlayalım</button>
+        </div>
+</section>
+</form>
+</section>
